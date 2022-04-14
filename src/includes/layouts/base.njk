@@ -9,6 +9,11 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
+
+        <!-- Snipcart Hints -->
+        <link rel="preconnect" href="https://app.snipcart.com" />
+        <link rel="preconnect" href="https://cdn.snipcart.com" />
     </head>
     <body>
         <div id="app">
@@ -22,11 +27,12 @@
                     {{ content | safe }}
                 </main>
             </div>
-
+            
             <!-- Footer -->
             {% include "partials/footer.njk" %}
         </div>
-
+        <script async src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"></script>
+        <div hidden id="snipcart" data-api-key="ZjQ4MTRiOTYtMjljOC00MzExLWE0YTUtYjI5MDhmNGIzNTVhNjM3ODU0NzQ0NzcyOTg5ODAz"></div>
         <script src="{{ '/js/main.js' | url }}"></script>
     </body>
 </html>
